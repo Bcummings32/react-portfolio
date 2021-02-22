@@ -1,21 +1,39 @@
-import logo from './logo.svg';
+
+import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 //import each component in here and construct
+import About from './pages/About.js';
+import NavigationBar from './pages/Navbar.js';
+import Portfolio from './pages/Portfolio.js';
+import Contact from './pages/Contact.js';
 
-function App() {
+
+class App extends Component  {
+  render() {
   return (
+    // <p>Hello</p>
+//     <div>
+//       <NavBar />
+//     <About />
+//     <Portfolio />
+//     <Contact />
+// </div>
+
+//try different router
+
     <Router>
-    <NavBar tagline="Hello Friends"/>
+    <NavigationBar tagline="Hello Friends"/>
     <Switch>
-      <Route exact path ="/about" component={About} />
-      <Route exact path="/portfolio" component={Portfolio}/>
-      <Route exact path="/contact" component={Contact}/>
-      <Route component={Home}/>
+      <Route path ="/about" component={About} />
+      <Route path="/portfolio" component={Portfolio}/>
+      <Route path="/contact" component={Contact}/>
+      <Route path="/"component={About} />
     </Switch>
   </Router>
 
   );
+  }
 }
 
 export default App;
