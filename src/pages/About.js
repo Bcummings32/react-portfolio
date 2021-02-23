@@ -24,7 +24,10 @@ const styles = {
 `
 const style = {
     width: 500,
-    height: 500
+    height: 500,
+    display: "block",
+    marginLeft: "auto",
+    marginRight: "auto",
 }
 
 const Home = () => (
@@ -34,6 +37,17 @@ const Home = () => (
         <img src={Profile} alt="Profile" style={style} className='Profile' />
           </GridComponent>
          </Fade>
+
+        <a href='https://github.com/Bcummings32' >Github
+            </a>
+            <br></br>
+
+        <a href='https://www.linkedin.com/in/ben-cummings-809b9946/' >LinkedIn</a>
+
+        <br></br>
+
+        <a href='https://docs.google.com/document/d/1CrP74LXZf_rKQjUC9AA85YdpTNozvkEQnIrUjgwP9mY/edit?usp=sharing'>Resume</a>
+
 
 
     <h1>Ben Cummings</h1>

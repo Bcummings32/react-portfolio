@@ -7,6 +7,11 @@ export default function Contact() {
   }
 
   return (
+    <div class='contact'>
+      <h1>Ben Cummings</h1>
+      <h3>bncmmngs@aol.com</h3>
+      <h3>336-260-3160</h3>
+    
     <div>
       <div className="container">
         <form onSubmit={sendEmail}>
@@ -23,7 +28,7 @@ export default function Contact() {
               <input
                 type="email"
                 className="form-control"
-                placeholder="Name"
+                placeholder="Email"
                 name="name"
               />
             </div>
@@ -31,7 +36,7 @@ export default function Contact() {
               <input
                 type="email"
                 className="form-control"
-                placeholder="Name"
+                placeholder="Message"
                 name="name"
               />
             </div>
@@ -41,9 +46,11 @@ export default function Contact() {
                 className="btn btn-info"
                 value="Send Message"
               ></input>
+              </div>
             </div>
+            </form>
             </div>
-          </form>
+         
         </div>
       </div>
     
