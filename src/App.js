@@ -9,6 +9,7 @@ import Portfolio from './pages/Portfolio.js';
 import Contact from './pages/Contact.js';
 
 
+
 class App extends Component  {
   render() {
   return (
@@ -28,7 +29,8 @@ class App extends Component  {
       <Route path ="/about" component={About} />
       <Route path="/portfolio" component={Portfolio}/>
       <Route path="/contact" component={Contact}/>
-      <Route path="/"component={About} />
+      
+    
     </Switch>
   </Router>
 
